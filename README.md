@@ -97,8 +97,14 @@ Función implementada:
 ```
 
 
+## Conclusiones
+Aunque la solución implementada sea muy simple y obviamente, haya maneras mucho más complejas y efectivas como solución, considero que la manera en que se ha resuelto el ejercicio puede ser una opción ya que tras realizar la comprobación, la contraseña no queda almacenada en ninguna variable. Por falta de tiempo, no se ha podido implementar un mecanismo más fuerte cómo pueden ser los mostrados en las transparencias de clase. Me parece interesante la opción de almacenar la contraseña como una función Hash y no dudo ponerlo en práctica en cuanto pueda.
 
 
+## Referencias
 
-
-
+- Creating a Login Systemn in Servlet | Studytonight - _https://www.studytonight.com/servlet/login-system-example-in-servlet.php#_
+- Java Servlet @WebServlet Annotation Example - _https://www.codejava.net/java-ee/servlet/webservlet-annotation-examples_
+- Apache Tomcat - _http://tomcat.apache.org/_
+- Eclipse Download - _https://www.eclipse.org/downloads/_
+- DB Browser for SQLite download - _https://sqlitebrowser.org/blog/version-3-10-1-released/_
