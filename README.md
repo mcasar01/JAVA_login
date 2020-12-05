@@ -59,7 +59,7 @@ Por:
 public static boolean checkUser(String email,char [] pass)
 ```
 
-A continuación, se convierte ese char [] a String para trabajar de una manera más sencilla. Posteriormente, al acabar el método, se inicializará este String a null para evitar porblemas de seguridad teniendo la contraseña almacenada en un String. La instrucción para la conversión del char [] a String es la siguiente:
+A continuación, se convierte ese char [] a String para trabajar de una manera más sencilla. Posteriormente, al acabar el método, se asignará a este String el valor null para evitar porblemas de seguridad teniendo la contraseña almacenada en un String. La instrucción para la conversión del char [] a String es la siguiente:
 
 ```
 String passw = String.valueOf(pass);
@@ -73,6 +73,29 @@ Por:
 ```
 ps.setString(2, pass);
 ```
+
+Finalmente, en este método, antes de cerrar la llave del try, se le asigna el valor **null** al String _passw_ , eliminando así el valor de la contraseña de dicho String. Para ello, es necesario incluir la siguiente linea de código:
+
+```
+passw =null;
+```
+El siguiente paso, volviendo al archivo de _Login.java_, es borrar el array donde tenemos almacenada la contraseña, para así evitar de nuevo, que alguien pueda leer la contraseña de dicho array. Para borrar dicho array, se ha creado una función que va recorriendo cada elemento del array de tipo char que se le pasa y modifica ese valor por un 0. A continuación, se muestra como se llama a dicha función justo despues del _else_ y cómo está implementada la función descrita anteriormente:
+
+Llamada a la función:
+```
+borrarChar(pass);
+```
+
+Función implementada:
+```
+//Método para el borrado del array
+	private void borrarChar(char[] pass) {
+		for(int i = 0; i < pass.length; i++) {
+			pass[i] =0;
+		}
+	}
+```
+
 
 
 
